@@ -7090,7 +7090,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <attribute name="MPN" value="SN74HC148D"/>
 <attribute name="OC_NEWARK" value="35K0804"/>
 </part>
-<part name="U$1" library="Teensy_3_and_LC_Series_Boards_v1.4" deviceset="TEENSY_3.1-3.2_DIL" device="">
+<part name="TEENSY" library="Teensy_3_and_LC_Series_Boards_v1.4" deviceset="TEENSY_3.1-3.2_DIL" device="">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_NEWARK" value="unknown"/>
@@ -7124,7 +7124,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
-<part name="SG1" library="buzzer" library_urn="urn:adsk.eagle:library:113" deviceset="F/QMB" device="" package3d_urn="urn:adsk.eagle:package:5270/1"/>
+<part name="BUZZER" library="buzzer" library_urn="urn:adsk.eagle:library:113" deviceset="F/QMB" device="" package3d_urn="urn:adsk.eagle:package:5270/1"/>
 <part name="S1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1">
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
@@ -7156,6 +7156,14 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="CNX_B_E_4_1_04"/>
+<attribute name="OC_NEWARK" value="08N2895"/>
+</part>
+<part name="R9" library="resistor-power" library_urn="urn:adsk.eagle:library:344" deviceset="R" device="RS1/4" package3d_urn="urn:adsk.eagle:package:25167/1" value="120"/>
+<part name="R10" library="resistor-power" library_urn="urn:adsk.eagle:library:344" deviceset="R" device="RS1/4" package3d_urn="urn:adsk.eagle:package:25167/1" value="1.8K"/>
+<part name="T4" library="opto-trans-siemens" library_urn="urn:adsk.eagle:library:317" deviceset="BP103" device="" package3d_urn="urn:adsk.eagle:package:21787/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -7164,7 +7172,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <text x="81.28" y="53.34" size="2.54" layer="94">General Purpose Switches</text>
 <text x="38.1" y="40.64" size="2.54" layer="94">Buzzer</text>
 <text x="149.86" y="137.16" size="2.54" layer="94">Motor Controllers and Encoders</text>
-<text x="175.26" y="195.58" size="2.54" layer="94">IR Emitters</text>
+<text x="208.28" y="195.58" size="2.54" layer="94">IR Emitters</text>
 <text x="55.88" y="193.04" size="2.54" layer="94">Battery Connector</text>
 <text x="48.26" y="144.78" size="2.54" layer="94">Teensy 3.2</text>
 <text x="119.38" y="195.58" size="2.54" layer="94">IR Receivers</text>
@@ -7192,33 +7200,33 @@ Source: www.vishay.com .. rwm.pdf</description>
 <attribute name="MF" x="236.22" y="71.12" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="236.22" y="71.12" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$1" gate="G$1" x="93.98" y="109.22" smashed="yes">
+<instance part="TEENSY" gate="G$1" x="93.98" y="109.22" smashed="yes">
 <attribute name="NAME" x="88.392" y="140.97" size="1.27" layer="95" font="vector" ratio="15"/>
 <attribute name="VALUE" x="86.868" y="68.326" size="1.27" layer="96" font="vector" ratio="15"/>
 <attribute name="OC_NEWARK" x="93.98" y="109.22" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="93.98" y="109.22" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="93.98" y="109.22" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED1" gate="G$1" x="180.34" y="167.64" smashed="yes">
-<attribute name="NAME" x="183.896" y="163.068" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="186.055" y="163.068" size="1.778" layer="96" rot="R90"/>
-<attribute name="OC_NEWARK" x="180.34" y="167.64" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="180.34" y="167.64" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="180.34" y="167.64" size="1.778" layer="96" display="off"/>
+<instance part="LED1" gate="G$1" x="213.36" y="167.64" smashed="yes">
+<attribute name="NAME" x="216.916" y="163.068" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="219.075" y="163.068" size="1.778" layer="96" rot="R90"/>
+<attribute name="OC_NEWARK" x="213.36" y="167.64" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="213.36" y="167.64" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="213.36" y="167.64" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED2" gate="G$1" x="190.5" y="167.64" smashed="yes">
-<attribute name="NAME" x="194.056" y="163.068" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="196.215" y="163.068" size="1.778" layer="96" rot="R90"/>
-<attribute name="OC_NEWARK" x="190.5" y="167.64" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="190.5" y="167.64" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="190.5" y="167.64" size="1.778" layer="96" display="off"/>
+<instance part="LED2" gate="G$1" x="223.52" y="167.64" smashed="yes">
+<attribute name="NAME" x="227.076" y="163.068" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="229.235" y="163.068" size="1.778" layer="96" rot="R90"/>
+<attribute name="OC_NEWARK" x="223.52" y="167.64" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="223.52" y="167.64" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="223.52" y="167.64" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED3" gate="G$1" x="200.66" y="167.64" smashed="yes">
-<attribute name="NAME" x="204.216" y="163.068" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="206.375" y="163.068" size="1.778" layer="96" rot="R90"/>
-<attribute name="OC_NEWARK" x="200.66" y="167.64" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="200.66" y="167.64" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="200.66" y="167.64" size="1.778" layer="96" display="off"/>
+<instance part="LED3" gate="G$1" x="233.68" y="167.64" smashed="yes">
+<attribute name="NAME" x="237.236" y="163.068" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="239.395" y="163.068" size="1.778" layer="96" rot="R90"/>
+<attribute name="OC_NEWARK" x="233.68" y="167.64" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="233.68" y="167.64" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="233.68" y="167.64" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="T1" gate="1" x="121.92" y="167.64" smashed="yes">
 <attribute name="NAME" x="127" y="170.18" size="1.778" layer="95"/>
@@ -7255,7 +7263,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
 </instance>
-<instance part="SG1" gate="G$1" x="53.34" y="30.48" smashed="yes">
+<instance part="BUZZER" gate="G$1" x="53.34" y="30.48" smashed="yes">
 <attribute name="NAME" x="50.8" y="36.83" size="1.778" layer="95"/>
 <attribute name="VALUE" x="58.42" y="30.48" size="1.778" layer="96"/>
 </instance>
@@ -7279,17 +7287,17 @@ Source: www.vishay.com .. rwm.pdf</description>
 <attribute name="NAME" x="158.6484" y="179.07" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="162.941" y="179.07" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R4" gate="G$1" x="180.34" y="175.26" smashed="yes" rot="R90">
-<attribute name="NAME" x="178.9684" y="171.45" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="183.261" y="171.45" size="1.778" layer="96" rot="R90"/>
+<instance part="R4" gate="G$1" x="213.36" y="175.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="211.9884" y="171.45" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="216.281" y="171.45" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R5" gate="G$1" x="190.5" y="175.26" smashed="yes" rot="R90">
-<attribute name="NAME" x="189.1284" y="171.45" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="193.421" y="171.45" size="1.778" layer="96" rot="R90"/>
+<instance part="R5" gate="G$1" x="223.52" y="175.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="222.1484" y="171.45" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="226.441" y="171.45" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R6" gate="G$1" x="200.66" y="175.26" smashed="yes" rot="R90">
-<attribute name="NAME" x="199.2884" y="171.45" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="203.581" y="171.45" size="1.778" layer="96" rot="R90"/>
+<instance part="R6" gate="G$1" x="233.68" y="175.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="232.3084" y="171.45" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="236.601" y="171.45" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R7" gate="G$1" x="96.52" y="22.86" smashed="yes" rot="R90">
 <attribute name="NAME" x="95.1484" y="19.05" size="1.778" layer="95" rot="R90"/>
@@ -7299,11 +7307,11 @@ Source: www.vishay.com .. rwm.pdf</description>
 <attribute name="NAME" x="123.0884" y="19.05" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="127.381" y="19.05" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND1" gate="1" x="160.02" y="152.4" smashed="yes">
-<attribute name="VALUE" x="157.48" y="149.86" size="1.778" layer="96"/>
+<instance part="GND1" gate="1" x="177.8" y="152.4" smashed="yes">
+<attribute name="VALUE" x="175.26" y="149.86" size="1.778" layer="96"/>
 </instance>
-<instance part="GND2" gate="1" x="200.66" y="152.4" smashed="yes">
-<attribute name="VALUE" x="198.12" y="149.86" size="1.778" layer="96"/>
+<instance part="GND2" gate="1" x="243.84" y="152.4" smashed="yes">
+<attribute name="VALUE" x="241.3" y="149.86" size="1.778" layer="96"/>
 </instance>
 <instance part="GND3" gate="1" x="134.62" y="15.24" smashed="yes">
 <attribute name="VALUE" x="132.08" y="12.7" size="1.778" layer="96"/>
@@ -7350,6 +7358,25 @@ Source: www.vishay.com .. rwm.pdf</description>
 <instance part="+3V4" gate="G$1" x="93.98" y="50.8" smashed="yes">
 <attribute name="VALUE" x="96.52" y="48.26" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="LED4" gate="G$1" x="243.84" y="167.64" smashed="yes">
+<attribute name="NAME" x="247.396" y="163.068" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="249.555" y="163.068" size="1.778" layer="96" rot="R90"/>
+<attribute name="OC_NEWARK" x="243.84" y="167.64" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="243.84" y="167.64" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="243.84" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R9" gate="G$1" x="243.84" y="175.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="242.4684" y="171.45" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="246.761" y="171.45" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R10" gate="G$1" x="177.8" y="182.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="176.4284" y="179.07" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="180.721" y="179.07" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="T4" gate="1" x="175.26" y="167.64" smashed="yes">
+<attribute name="NAME" x="180.34" y="170.18" size="1.778" layer="95"/>
+<attribute name="VALUE" x="180.34" y="167.64" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7370,33 +7397,41 @@ Source: www.vishay.com .. rwm.pdf</description>
 </segment>
 <segment>
 <wire x1="116.84" y1="127" x2="119.38" y2="127" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="TEENSY" gate="G$1" pin="GND"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
-<wire x1="180.34" y1="162.56" x2="180.34" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="154.94" x2="190.5" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="162.56" x2="213.36" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="154.94" x2="223.52" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
-<wire x1="190.5" y1="154.94" x2="200.66" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="162.56" x2="190.5" y2="154.94" width="0.1524" layer="91"/>
-<junction x="190.5" y="154.94"/>
+<wire x1="223.52" y1="154.94" x2="233.68" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="154.94" x2="243.84" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="162.56" x2="223.52" y2="154.94" width="0.1524" layer="91"/>
+<junction x="223.52" y="154.94"/>
 <pinref part="LED3" gate="G$1" pin="C"/>
-<wire x1="200.66" y1="162.56" x2="200.66" y2="154.94" width="0.1524" layer="91"/>
-<junction x="200.66" y="154.94"/>
+<junction x="243.84" y="154.94"/>
 <pinref part="GND2" gate="1" pin="GND"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<wire x1="243.84" y1="154.94" x2="243.84" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="162.56" x2="233.68" y2="154.94" width="0.1524" layer="91"/>
+<junction x="233.68" y="154.94"/>
 </segment>
 <segment>
 <pinref part="T1" gate="1" pin="E"/>
 <wire x1="124.46" y1="162.56" x2="124.46" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="T3" gate="1" pin="E"/>
 <wire x1="124.46" y1="154.94" x2="142.24" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="154.94" x2="160.02" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="154.94" x2="160.02" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="T2" gate="1" pin="E"/>
+<wire x1="160.02" y1="154.94" x2="177.8" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="162.56" x2="142.24" y2="154.94" width="0.1524" layer="91"/>
 <junction x="142.24" y="154.94"/>
 <pinref part="GND1" gate="1" pin="GND"/>
+<junction x="177.8" y="154.94"/>
+<pinref part="T4" gate="1" pin="E"/>
+<wire x1="177.8" y1="162.56" x2="177.8" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="T3" gate="1" pin="E"/>
+<wire x1="160.02" y1="162.56" x2="160.02" y2="154.94" width="0.1524" layer="91"/>
 <junction x="160.02" y="154.94"/>
 </segment>
 <segment>
@@ -7418,7 +7453,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="SG1" gate="G$1" pin="+"/>
+<pinref part="BUZZER" gate="G$1" pin="+"/>
 <wire x1="50.8" y1="27.94" x2="45.72" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
@@ -7474,76 +7509,76 @@ Source: www.vishay.com .. rwm.pdf</description>
 </net>
 <net name="L1" class="0">
 <segment>
-<wire x1="180.34" y1="180.34" x2="180.34" y2="182.88" width="0.1524" layer="91"/>
-<label x="180.34" y="182.88" size="1.778" layer="95" rot="R90"/>
+<wire x1="213.36" y1="180.34" x2="213.36" y2="182.88" width="0.1524" layer="91"/>
+<label x="213.36" y="182.88" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="17/A3/T"/>
-<wire x1="71.12" y1="91.44" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
-<label x="66.04" y="91.44" size="1.778" layer="95" rot="R180"/>
+<pinref part="TEENSY" gate="G$1" pin="10/TX2/PWM"/>
+<wire x1="71.12" y1="109.22" x2="58.42" y2="109.22" width="0.1524" layer="91"/>
+<label x="58.42" y="109.22" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="L2" class="0">
 <segment>
-<wire x1="190.5" y1="180.34" x2="190.5" y2="182.88" width="0.1524" layer="91"/>
-<label x="190.5" y="182.88" size="1.778" layer="95" rot="R90"/>
+<wire x1="223.52" y1="180.34" x2="223.52" y2="182.88" width="0.1524" layer="91"/>
+<label x="223.52" y="182.88" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="18/A4/T/SDA0"/>
-<wire x1="71.12" y1="88.9" x2="58.42" y2="88.9" width="0.1524" layer="91"/>
-<label x="58.42" y="88.9" size="1.778" layer="95" rot="R180"/>
+<pinref part="TEENSY" gate="G$1" pin="11/MOSI"/>
+<wire x1="71.12" y1="106.68" x2="66.04" y2="106.68" width="0.1524" layer="91"/>
+<label x="66.04" y="106.68" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="L3" class="0">
 <segment>
-<wire x1="200.66" y1="180.34" x2="200.66" y2="182.88" width="0.1524" layer="91"/>
-<label x="200.66" y="182.88" size="1.778" layer="95" rot="R90"/>
+<wire x1="233.68" y1="180.34" x2="233.68" y2="182.88" width="0.1524" layer="91"/>
+<label x="233.68" y="182.88" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="19/A5/T/SCL0"/>
-<wire x1="71.12" y1="86.36" x2="66.04" y2="86.36" width="0.1524" layer="91"/>
-<label x="66.04" y="86.36" size="1.778" layer="95" rot="R180"/>
+<pinref part="TEENSY" gate="G$1" pin="12/MISO"/>
+<wire x1="71.12" y1="104.14" x2="58.42" y2="104.14" width="0.1524" layer="91"/>
+<label x="58.42" y="104.14" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="T1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="14/A1"/>
+<pinref part="TEENSY" gate="G$1" pin="14/A1"/>
 <wire x1="71.12" y1="99.06" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
-<label x="58.42" y="99.06" size="1.778" layer="95" rot="R180"/>
+<label x="58.42" y="99.06" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="T1" gate="1" pin="C"/>
 <wire x1="124.46" y1="177.8" x2="124.46" y2="172.72" width="0.1524" layer="91"/>
-<label x="124.46" y="172.72" size="1.778" layer="95" rot="R180"/>
+<label x="124.46" y="172.72" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="T2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="15/A1/T"/>
+<pinref part="TEENSY" gate="G$1" pin="15/A1/T"/>
 <wire x1="71.12" y1="96.52" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
-<label x="66.04" y="96.52" size="1.778" layer="95" rot="R180"/>
+<label x="66.04" y="96.52" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="T2" gate="1" pin="C"/>
 <wire x1="142.24" y1="177.8" x2="142.24" y2="172.72" width="0.1524" layer="91"/>
-<label x="142.24" y="172.72" size="1.778" layer="95" rot="R180"/>
+<label x="142.24" y="172.72" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="T3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="16/A2/T"/>
+<pinref part="TEENSY" gate="G$1" pin="16/A2/T"/>
 <wire x1="71.12" y1="93.98" x2="58.42" y2="93.98" width="0.1524" layer="91"/>
-<label x="58.42" y="93.98" size="1.778" layer="95" rot="R180"/>
+<label x="58.42" y="93.98" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="T3" gate="1" pin="C"/>
 <wire x1="160.02" y1="177.8" x2="160.02" y2="172.72" width="0.1524" layer="91"/>
-<label x="160.02" y="172.72" size="1.778" layer="95" rot="R180"/>
+<label x="160.02" y="172.72" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -7551,72 +7586,72 @@ Source: www.vishay.com .. rwm.pdf</description>
 <segment>
 <pinref part="IC1" gate="G$1" pin="EN1"/>
 <wire x1="190.5" y1="121.92" x2="185.42" y2="121.92" width="0.1524" layer="91"/>
-<label x="185.42" y="121.92" size="1.778" layer="95" rot="R180"/>
+<label x="185.42" y="121.92" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="20/A6/PWM"/>
+<pinref part="TEENSY" gate="G$1" pin="20/A6/PWM"/>
 <wire x1="71.12" y1="83.82" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
-<label x="58.42" y="83.82" size="1.778" layer="95" rot="R180"/>
+<label x="58.42" y="83.82" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="M1F" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="SIG1A"/>
 <wire x1="190.5" y1="119.38" x2="177.8" y2="119.38" width="0.1524" layer="91"/>
-<label x="177.8" y="119.38" size="1.778" layer="95" rot="R180"/>
+<label x="177.8" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="2"/>
+<pinref part="TEENSY" gate="G$1" pin="2"/>
 <wire x1="71.12" y1="129.54" x2="66.04" y2="129.54" width="0.1524" layer="91"/>
-<label x="66.04" y="129.54" size="1.778" layer="95" rot="R180"/>
+<label x="66.04" y="129.54" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="M1R" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="SIG1B"/>
 <wire x1="190.5" y1="116.84" x2="185.42" y2="116.84" width="0.1524" layer="91"/>
-<label x="185.42" y="116.84" size="1.778" layer="95" rot="R180"/>
+<label x="185.42" y="116.84" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="3/CAN-TX/PWM"/>
+<pinref part="TEENSY" gate="G$1" pin="3/CAN-TX/PWM"/>
 <wire x1="71.12" y1="127" x2="58.42" y2="127" width="0.1524" layer="91"/>
-<label x="58.42" y="127" size="1.778" layer="95" rot="R180"/>
+<label x="58.42" y="127" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="M2E" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="EN2"/>
 <wire x1="223.52" y1="121.92" x2="228.6" y2="121.92" width="0.1524" layer="91"/>
-<label x="228.6" y="121.92" size="1.778" layer="95"/>
+<label x="228.6" y="121.92" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="21/A7/PWM"/>
+<pinref part="TEENSY" gate="G$1" pin="21/A7/PWM"/>
 <wire x1="71.12" y1="81.28" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
-<label x="66.04" y="81.28" size="1.778" layer="95" rot="R180"/>
+<label x="66.04" y="81.28" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="M2F" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="SIG2A"/>
 <wire x1="223.52" y1="119.38" x2="236.22" y2="119.38" width="0.1524" layer="91"/>
-<label x="236.22" y="119.38" size="1.778" layer="95"/>
+<label x="236.22" y="119.38" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="4/CAN-RX/PWM"/>
+<pinref part="TEENSY" gate="G$1" pin="4/CAN-RX/PWM"/>
 <wire x1="71.12" y1="124.46" x2="66.04" y2="124.46" width="0.1524" layer="91"/>
-<label x="66.04" y="124.46" size="1.778" layer="95" rot="R180"/>
+<label x="66.04" y="124.46" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="M2R" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="SIG2B"/>
 <wire x1="223.52" y1="116.84" x2="228.6" y2="116.84" width="0.1524" layer="91"/>
-<label x="228.6" y="116.84" size="1.778" layer="95"/>
+<label x="228.6" y="116.84" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="5/PWM"/>
+<pinref part="TEENSY" gate="G$1" pin="5/PWM"/>
 <wire x1="71.12" y1="121.92" x2="58.42" y2="121.92" width="0.1524" layer="91"/>
-<label x="58.42" y="121.92" size="1.778" layer="95" rot="R180"/>
+<label x="58.42" y="121.92" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -7647,9 +7682,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 </net>
 <net name="S1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="22/A8/T/PWM"/>
+<pinref part="TEENSY" gate="G$1" pin="22/A8/T/PWM"/>
 <wire x1="71.12" y1="78.74" x2="58.42" y2="78.74" width="0.1524" layer="91"/>
-<label x="58.42" y="78.74" size="1.778" layer="95" rot="R180"/>
+<label x="58.42" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="S1" gate="1" pin="P"/>
@@ -7659,14 +7694,14 @@ Source: www.vishay.com .. rwm.pdf</description>
 <junction x="96.52" y="33.02"/>
 <wire x1="96.52" y1="33.02" x2="93.98" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
-<label x="93.98" y="33.02" size="1.778" layer="95" rot="R180"/>
+<label x="93.98" y="33.02" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="S2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="23/A9/T/PWM"/>
+<pinref part="TEENSY" gate="G$1" pin="23/A9/T/PWM"/>
 <wire x1="71.12" y1="76.2" x2="66.04" y2="76.2" width="0.1524" layer="91"/>
-<label x="66.04" y="76.2" size="1.778" layer="95" rot="R180"/>
+<label x="66.04" y="76.2" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="S2" gate="1" pin="P"/>
@@ -7676,24 +7711,24 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="124.46" y1="33.02" x2="124.46" y2="27.94" width="0.1524" layer="91"/>
 <junction x="124.46" y="33.02"/>
 <wire x1="124.46" y1="33.02" x2="119.38" y2="33.02" width="0.1524" layer="91"/>
-<label x="119.38" y="33.02" size="1.778" layer="95" rot="R180"/>
+<label x="119.38" y="33.02" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="BZ" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="6/PWM"/>
+<pinref part="TEENSY" gate="G$1" pin="6/PWM"/>
 <wire x1="71.12" y1="119.38" x2="66.04" y2="119.38" width="0.1524" layer="91"/>
-<label x="66.04" y="119.38" size="1.778" layer="95" rot="R180"/>
+<label x="66.04" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SG1" gate="G$1" pin="-"/>
+<pinref part="BUZZER" gate="G$1" pin="-"/>
 <wire x1="58.42" y1="27.94" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
-<label x="63.5" y="27.94" size="1.778" layer="95"/>
+<label x="63.5" y="27.94" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VIN"/>
+<pinref part="TEENSY" gate="G$1" pin="VIN"/>
 <wire x1="116.84" y1="134.62" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
 </segment>
@@ -7709,6 +7744,10 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
 <junction x="124.46" y="190.5"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="187.96" x2="177.8" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="190.5" x2="160.02" y2="190.5" width="0.1524" layer="91"/>
+<junction x="160.02" y="190.5"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VCC1"/>
@@ -7734,7 +7773,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="3.3V"/>
+<pinref part="TEENSY" gate="G$1" pin="3.3V"/>
 <wire x1="116.84" y1="132.08" x2="119.38" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 </segment>
@@ -7753,6 +7792,37 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="106.68" y1="48.26" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
 <junction x="106.68" y="48.26"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="L4" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="243.84" y1="180.34" x2="243.84" y2="182.88" width="0.1524" layer="91"/>
+<label x="243.84" y="182.88" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="TEENSY" gate="G$1" pin="13/SCK/LED"/>
+<wire x1="71.12" y1="101.6" x2="66.04" y2="101.6" width="0.1524" layer="91"/>
+<label x="66.04" y="101.6" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="T4" class="0">
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="T4" gate="1" pin="C"/>
+<wire x1="177.8" y1="177.8" x2="177.8" y2="172.72" width="0.1524" layer="91"/>
+<label x="177.8" y="172.72" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="TEENSY" gate="G$1" pin="17/A3/T"/>
+<wire x1="71.12" y1="91.44" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
+<label x="66.04" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
