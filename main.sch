@@ -2214,77 +2214,88 @@ Source: www.kingbright.com</description>
 <description>&lt;b&gt;Siemens Opto Transistors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="BP103" urn="urn:adsk.eagle:footprint:21772/1" library_version="1">
+<package name="BPX81" urn="urn:adsk.eagle:footprint:21778/1" library_version="1">
 <description>&lt;B&gt;PHOTO TRANSISTOR&lt;/B&gt;</description>
-<wire x1="-2.7432" y1="0.4572" x2="-3.556" y2="0.4572" width="0.1524" layer="21"/>
-<wire x1="-3.556" y1="0.4572" x2="-3.556" y2="-0.4826" width="0.1524" layer="21"/>
-<wire x1="-3.556" y1="-0.4826" x2="-2.7178" y2="-0.4826" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="0" x2="0" y2="1.905" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.27" y1="0" x2="0" y2="1.27" width="0.1524" layer="21" curve="-90"/>
-<wire x1="0" y1="-1.27" x2="1.27" y2="0" width="0.1524" layer="51" curve="90"/>
-<wire x1="0" y1="-1.905" x2="1.905" y2="0" width="0.1524" layer="51" curve="90"/>
-<circle x="0" y="-0.0254" radius="2.7686" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="2.159" width="0.1524" layer="51"/>
-<pad name="E" x="-1.016" y="-1.016" drill="0.8128" shape="octagon"/>
-<pad name="C" x="1.016" y="1.016" drill="0.8128" shape="octagon"/>
-<pad name="B" x="1.27" y="-1.27" drill="0.8128" shape="octagon"/>
-<text x="3.175" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.175" y="-1.905" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.27" x2="-1.27" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.889" x2="1.27" y2="0.508" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.889" x2="-1.27" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="0" y1="1.27" x2="0.9917" y2="0.7934" width="0.1524" layer="21" curve="-51.33923"/>
+<wire x1="-0.9917" y1="0.7934" x2="0" y2="1.27" width="0.1524" layer="21" curve="-51.33923"/>
+<wire x1="0" y1="-1.27" x2="0.9917" y2="-0.7934" width="0.1524" layer="21" curve="51.33923"/>
+<wire x1="-0.9917" y1="-0.7934" x2="0" y2="-1.27" width="0.1524" layer="21" curve="51.33923"/>
+<wire x1="0.9558" y1="-0.8363" x2="1.27" y2="0" width="0.1524" layer="51" curve="41.185419"/>
+<wire x1="0.9756" y1="0.813" x2="1.2699" y2="0" width="0.1524" layer="51" curve="-39.806332"/>
+<wire x1="-1.27" y1="0" x2="-0.9643" y2="-0.8265" width="0.1524" layer="51" curve="40.600331"/>
+<wire x1="-1.27" y1="0" x2="-0.9643" y2="0.8265" width="0.1524" layer="51" curve="-40.600331"/>
+<wire x1="-0.889" y1="0" x2="0" y2="0.889" width="0.1524" layer="51" curve="-90"/>
+<wire x1="-0.508" y1="0" x2="0" y2="0.508" width="0.1524" layer="51" curve="-90"/>
+<wire x1="0" y1="-0.508" x2="0.508" y2="0" width="0.1524" layer="51" curve="90"/>
+<wire x1="0" y1="-0.889" x2="0.889" y2="0" width="0.1524" layer="51" curve="90"/>
+<wire x1="1.27" y1="-0.635" x2="1.524" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="1.27" y1="-0.635" x2="1.27" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="1.651" y1="-0.635" x2="1.651" y2="0.762" width="0.1524" layer="51"/>
+<wire x1="1.651" y1="0.762" x2="1.524" y2="0.762" width="0.1524" layer="51"/>
+<wire x1="1.524" y1="0.762" x2="1.524" y2="0.508" width="0.1524" layer="51"/>
+<wire x1="1.524" y1="0.508" x2="1.27" y2="0.508" width="0.1524" layer="51"/>
+<wire x1="1.27" y1="0.508" x2="1.27" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="1.524" y1="0.508" x2="1.524" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="1.524" y1="-0.635" x2="1.651" y2="-0.635" width="0.1524" layer="51"/>
+<pad name="E" x="-1.27" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="C" x="1.27" y="0" drill="0.8128" shape="long" rot="R90"/>
+<text x="-1.8034" y="1.6002" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.778" y="-2.8702" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
-<package3d name="BP103" urn="urn:adsk.eagle:package:21787/1" type="box" library_version="1">
+<package3d name="BPX81" urn="urn:adsk.eagle:package:21798/1" type="box" library_version="1">
 <description>PHOTO TRANSISTOR</description>
 <packageinstances>
-<packageinstance name="BP103"/>
+<packageinstance name="BPX81"/>
 </packageinstances>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="OT-N" urn="urn:adsk.eagle:symbol:21771/1" library_version="1">
-<wire x1="-4.318" y1="-2.54" x2="-2.54" y2="-0.762" width="0.1524" layer="94"/>
-<wire x1="-6.096" y1="-2.54" x2="-4.318" y2="-0.762" width="0.1524" layer="94"/>
+<symbol name="OT-NO" urn="urn:adsk.eagle:symbol:21777/1" library_version="1">
+<wire x1="-3.048" y1="-2.54" x2="-1.27" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-0.762" x2="-2.413" y2="-1.143" width="0.1524" layer="94"/>
+<wire x1="-2.413" y1="-1.143" x2="-1.651" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="-1.651" y1="-1.905" x2="-1.27" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="-1.143" y1="1.143" x2="-2.286" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="-2.286" y1="0.762" x2="-1.524" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="0" x2="-1.143" y2="1.143" width="0.1524" layer="94"/>
+<wire x1="-2.921" y1="-0.635" x2="-1.143" y2="1.143" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
 <wire x1="0" y1="0" x2="2.286" y2="-2.286" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.016" x2="2.286" y2="-2.286" width="0.1524" layer="94"/>
 <wire x1="2.286" y1="-2.286" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="-2.286" x2="1.016" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-1.778" x2="1.778" y2="-1.016" width="0.1524" layer="94"/>
 <text x="5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="5.08" y="0" size="1.778" layer="96">&gt;VALUE</text>
 <rectangle x1="-0.381" y1="-2.54" x2="0.381" y2="2.54" layer="94"/>
-<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<polygon width="0.1524" layer="94">
-<vertex x="-5.461" y="-1.143"/>
-<vertex x="-4.318" y="-0.762"/>
-<vertex x="-4.699" y="-1.905"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.683" y="-1.143"/>
-<vertex x="-2.54" y="-0.762"/>
-<vertex x="-2.921" y="-1.905"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="2.413" y="-2.413"/>
-<vertex x="1.778" y="-1.016"/>
-<vertex x="1.016" y="-1.778"/>
-</polygon>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BP103" urn="urn:adsk.eagle:component:21799/1" prefix="T" library_version="1">
+<deviceset name="BPX81" urn="urn:adsk.eagle:component:21808/1" prefix="T" library_version="1">
 <description>&lt;B&gt;PHOTO TRANSISTOR&lt;/B&gt;</description>
 <gates>
-<gate name="1" symbol="OT-N" x="0" y="0"/>
+<gate name="1" symbol="OT-NO" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="BP103">
+<device name="" package="BPX81">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
 <connect gate="1" pin="C" pad="C"/>
 <connect gate="1" pin="E" pad="E"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:21787/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:21798/1"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -7080,24 +7091,24 @@ Source: www.vishay.com .. rwm.pdf</description>
 <attribute name="MPN" value="SN74HC148D"/>
 <attribute name="OC_NEWARK" value="35K0804"/>
 </part>
-<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1">
+<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="950">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value="CNX_B_E_4_1_04"/>
 <attribute name="OC_NEWARK" value="08N2895"/>
 </part>
-<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1">
+<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="950">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value="CNX_B_E_4_1_04"/>
 <attribute name="OC_NEWARK" value="08N2895"/>
 </part>
-<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1">
+<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="950">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value="CNX_B_E_4_1_04"/>
 <attribute name="OC_NEWARK" value="08N2895"/>
 </part>
-<part name="T1" library="opto-trans-siemens" library_urn="urn:adsk.eagle:library:317" deviceset="BP103" device="" package3d_urn="urn:adsk.eagle:package:21787/1"/>
-<part name="T2" library="opto-trans-siemens" library_urn="urn:adsk.eagle:library:317" deviceset="BP103" device="" package3d_urn="urn:adsk.eagle:package:21787/1"/>
-<part name="T3" library="opto-trans-siemens" library_urn="urn:adsk.eagle:library:317" deviceset="BP103" device="" package3d_urn="urn:adsk.eagle:package:21787/1"/>
+<part name="T1" library="opto-trans-siemens" library_urn="urn:adsk.eagle:library:317" deviceset="BPX81" device="" package3d_urn="urn:adsk.eagle:package:21798/1"/>
+<part name="T2" library="opto-trans-siemens" library_urn="urn:adsk.eagle:library:317" deviceset="BPX81" device="" package3d_urn="urn:adsk.eagle:package:21798/1"/>
+<part name="T3" library="opto-trans-siemens" library_urn="urn:adsk.eagle:library:317" deviceset="BPX81" device="" package3d_urn="urn:adsk.eagle:package:21798/1"/>
 <part name="IC2" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="78*" device="T" package3d_urn="urn:adsk.eagle:package:16414/1" technology="05">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value="NCP7805TG"/>
@@ -7110,10 +7121,10 @@ Source: www.vishay.com .. rwm.pdf</description>
 </part>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
 <part name="BUZZER" library="buzzer" library_urn="urn:adsk.eagle:library:113" deviceset="F/QMB" device="" package3d_urn="urn:adsk.eagle:package:5270/1"/>
-<part name="S1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1">
+<part name="S1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1" value="0">
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
-<part name="S2" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1">
+<part name="S2" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1" value="0">
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
 <part name="R1" library="resistor-power" library_urn="urn:adsk.eagle:library:344" deviceset="R" device="RS1/4" package3d_urn="urn:adsk.eagle:package:25167/1" value="1.8K"/>
@@ -7129,23 +7140,23 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1">
+<part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="950">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value="CNX_B_E_4_1_04"/>
 <attribute name="OC_NEWARK" value="08N2895"/>
 </part>
 <part name="R9" library="resistor-power" library_urn="urn:adsk.eagle:library:344" deviceset="R" device="RS1/4" package3d_urn="urn:adsk.eagle:package:25167/1" value="120"/>
 <part name="R10" library="resistor-power" library_urn="urn:adsk.eagle:library:344" deviceset="R" device="RS1/4" package3d_urn="urn:adsk.eagle:package:25167/1" value="1.8K"/>
-<part name="T4" library="opto-trans-siemens" library_urn="urn:adsk.eagle:library:317" deviceset="BP103" device="" package3d_urn="urn:adsk.eagle:package:21787/1"/>
-<part name="TEENSY" library="teensy" deviceset="TEENSY" device=""/>
+<part name="T4" library="opto-trans-siemens" library_urn="urn:adsk.eagle:library:317" deviceset="BPX81" device="" package3d_urn="urn:adsk.eagle:package:21798/1"/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="TEENSY" library="teensy" deviceset="TEENSY" device=""/>
+<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7295,12 +7306,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 <instance part="P+3" gate="1" x="124.46" y="193.04" smashed="yes">
 <attribute name="VALUE" x="121.92" y="187.96" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V1" gate="1" x="170.18" y="73.66" smashed="yes" rot="R90">
-<attribute name="VALUE" x="170.18" y="73.66" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="+3V2" gate="1" x="215.9" y="73.66" smashed="yes" rot="R90">
-<attribute name="VALUE" x="215.9" y="73.66" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="GND8" gate="1" x="170.18" y="78.74" smashed="yes" rot="R270">
 <attribute name="VALUE" x="167.64" y="81.28" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -7329,10 +7334,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 <attribute name="NAME" x="180.34" y="170.18" size="1.778" layer="95"/>
 <attribute name="VALUE" x="180.34" y="167.64" size="1.778" layer="96"/>
 </instance>
-<instance part="TEENSY" gate="G$1" x="76.2" y="96.52" smashed="yes">
-<attribute name="NAME" x="71.12" y="134.62" size="1.778" layer="95"/>
-<attribute name="VALUE" x="71.12" y="99.06" size="1.778" layer="96" rot="R270"/>
-</instance>
 <instance part="GND10" gate="1" x="48.26" y="129.54" smashed="yes" rot="R270">
 <attribute name="VALUE" x="45.72" y="132.08" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -7341,6 +7342,16 @@ Source: www.vishay.com .. rwm.pdf</description>
 </instance>
 <instance part="P+5" gate="1" x="104.14" y="129.54" smashed="yes" rot="R270">
 <attribute name="VALUE" x="99.06" y="132.08" size="1.778" layer="96"/>
+</instance>
+<instance part="TEENSY" gate="G$1" x="76.2" y="96.52" smashed="yes">
+<attribute name="NAME" x="71.12" y="134.62" size="1.778" layer="95"/>
+<attribute name="VALUE" x="71.12" y="99.06" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="P+2" gate="1" x="167.64" y="73.66" smashed="yes" rot="R90">
+<attribute name="VALUE" x="167.64" y="73.66" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="P+6" gate="1" x="213.36" y="73.66" smashed="yes" rot="R90">
+<attribute name="VALUE" x="213.36" y="73.66" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -7420,9 +7431,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="218.44" y1="78.74" x2="223.52" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="_GND"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="63.5" y1="129.54" x2="50.8" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="TEENSY" gate="G$1" pin="_GND"/>
 </segment>
 <segment>
 <pinref part="S1" gate="1" pin="S"/>
@@ -7486,9 +7497,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="_B0"/>
 <wire x1="88.9" y1="111.76" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
 <label x="93.98" y="111.76" size="1.778" layer="95" xref="yes"/>
+<pinref part="TEENSY" gate="G$1" pin="_B0"/>
 </segment>
 </net>
 <net name="L2" class="0">
@@ -7498,9 +7509,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="_B1"/>
 <wire x1="88.9" y1="114.3" x2="99.06" y2="114.3" width="0.1524" layer="91"/>
 <label x="99.06" y="114.3" size="1.778" layer="95" xref="yes"/>
+<pinref part="TEENSY" gate="G$1" pin="_B1"/>
 </segment>
 </net>
 <net name="L3" class="0">
@@ -7510,9 +7521,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="_B2"/>
 <wire x1="88.9" y1="116.84" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
 <label x="93.98" y="116.84" size="1.778" layer="95" xref="yes"/>
+<pinref part="TEENSY" gate="G$1" pin="_B2"/>
 </segment>
 </net>
 <net name="T1" class="0">
@@ -7523,9 +7534,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="_F0"/>
 <wire x1="88.9" y1="93.98" x2="93.98" y2="93.98" width="0.1524" layer="91"/>
 <label x="93.98" y="93.98" size="1.778" layer="95" xref="yes"/>
+<pinref part="TEENSY" gate="G$1" pin="_F0"/>
 </segment>
 </net>
 <net name="T2" class="0">
@@ -7536,9 +7547,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="_F1"/>
 <wire x1="88.9" y1="91.44" x2="99.06" y2="91.44" width="0.1524" layer="91"/>
 <label x="99.06" y="91.44" size="1.778" layer="95" xref="yes"/>
+<pinref part="TEENSY" gate="G$1" pin="_F1"/>
 </segment>
 </net>
 <net name="T3" class="0">
@@ -7549,9 +7560,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="_F4"/>
 <wire x1="88.9" y1="86.36" x2="93.98" y2="86.36" width="0.1524" layer="91"/>
 <label x="93.98" y="86.36" size="1.778" layer="95" xref="yes"/>
+<pinref part="TEENSY" gate="G$1" pin="_F4"/>
 </segment>
 </net>
 <net name="M1E" class="0">
@@ -7561,9 +7572,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <label x="185.42" y="121.92" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="_B7"/>
 <wire x1="63.5" y1="127" x2="58.42" y2="127" width="0.1524" layer="91"/>
 <label x="58.42" y="127" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="TEENSY" gate="G$1" pin="_B7"/>
 </segment>
 </net>
 <net name="M1F" class="0">
@@ -7573,9 +7584,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <label x="177.8" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="_D2"/>
 <wire x1="63.5" y1="119.38" x2="50.8" y2="119.38" width="0.1524" layer="91"/>
 <label x="50.8" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="TEENSY" gate="G$1" pin="_D2"/>
 </segment>
 </net>
 <net name="M1R" class="0">
@@ -7585,9 +7596,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <label x="185.42" y="116.84" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="_D3"/>
 <wire x1="63.5" y1="116.84" x2="58.42" y2="116.84" width="0.1524" layer="91"/>
 <label x="58.42" y="116.84" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="TEENSY" gate="G$1" pin="_D3"/>
 </segment>
 </net>
 <net name="M2E" class="0">
@@ -7597,9 +7608,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <label x="228.6" y="121.92" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="_D0"/>
 <wire x1="63.5" y1="124.46" x2="50.8" y2="124.46" width="0.1524" layer="91"/>
 <label x="50.8" y="124.46" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="TEENSY" gate="G$1" pin="_D0"/>
 </segment>
 </net>
 <net name="M2F" class="0">
@@ -7609,9 +7620,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <label x="236.22" y="119.38" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="_D6"/>
 <wire x1="63.5" y1="109.22" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
 <label x="50.8" y="109.22" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="TEENSY" gate="G$1" pin="_D6"/>
 </segment>
 </net>
 <net name="M2R" class="0">
@@ -7621,9 +7632,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <label x="228.6" y="116.84" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="_D7"/>
 <wire x1="63.5" y1="106.68" x2="58.42" y2="106.68" width="0.1524" layer="91"/>
 <label x="58.42" y="106.68" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="TEENSY" gate="G$1" pin="_D7"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -7662,9 +7673,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <label x="93.98" y="33.02" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="_B4"/>
 <wire x1="88.9" y1="121.92" x2="93.98" y2="121.92" width="0.1524" layer="91"/>
 <label x="93.98" y="121.92" size="1.778" layer="95" xref="yes"/>
+<pinref part="TEENSY" gate="G$1" pin="_B4"/>
 </segment>
 </net>
 <net name="S2" class="0">
@@ -7677,9 +7688,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <label x="119.38" y="33.02" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="_B5"/>
 <wire x1="88.9" y1="124.46" x2="93.98" y2="124.46" width="0.1524" layer="91"/>
 <label x="93.98" y="124.46" size="1.778" layer="95" xref="yes"/>
+<pinref part="TEENSY" gate="G$1" pin="_B5"/>
 </segment>
 </net>
 <net name="BZ" class="0">
@@ -7689,9 +7700,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <label x="63.5" y="27.94" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="_B3"/>
 <wire x1="88.9" y1="119.38" x2="93.98" y2="119.38" width="0.1524" layer="91"/>
 <label x="93.98" y="119.38" size="1.778" layer="95" xref="yes"/>
+<pinref part="TEENSY" gate="G$1" pin="_B3"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -7724,21 +7735,19 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="P+1" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="5V"/>
 <pinref part="P+5" gate="1" pin="+5V"/>
 <wire x1="88.9" y1="129.54" x2="101.6" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="TEENSY" gate="G$1" pin="5V"/>
 </segment>
-</net>
-<net name="+3V3" class="0">
 <segment>
 <pinref part="J_ENCODER_1" gate="J_ENCODER" pin="VCC"/>
-<wire x1="177.8" y1="73.66" x2="172.72" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="+3V1" gate="1" pin="+5V"/>
+<pinref part="P+2" gate="1" pin="+5V"/>
+<wire x1="177.8" y1="73.66" x2="170.18" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J_ENCODER_2" gate="J_ENCODER" pin="VCC"/>
-<wire x1="223.52" y1="73.66" x2="218.44" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="+3V2" gate="1" pin="+5V"/>
+<pinref part="P+6" gate="1" pin="+5V"/>
+<wire x1="223.52" y1="73.66" x2="215.9" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -7754,9 +7763,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <label x="243.84" y="182.88" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="_D1"/>
 <wire x1="63.5" y1="121.92" x2="58.42" y2="121.92" width="0.1524" layer="91"/>
 <label x="58.42" y="121.92" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="TEENSY" gate="G$1" pin="_D1"/>
 </segment>
 </net>
 <net name="T4" class="0">
@@ -7767,18 +7776,22 @@ Source: www.vishay.com .. rwm.pdf</description>
 <label x="177.8" y="172.72" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="_F5"/>
 <wire x1="88.9" y1="83.82" x2="99.06" y2="83.82" width="0.1524" layer="91"/>
 <label x="99.06" y="83.82" size="1.778" layer="95" xref="yes"/>
+<pinref part="TEENSY" gate="G$1" pin="_F5"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 <errors>
+<approved hash="104,1,200.66,99.06,IC1,P4,GND,,,"/>
+<approved hash="104,1,203.2,99.06,IC1,P5,GND,,,"/>
+<approved hash="104,1,205.74,99.06,IC1,P12,GND,,,"/>
+<approved hash="104,1,208.28,99.06,IC1,P13,GND,,,"/>
+<approved hash="104,1,205.74,134.62,IC1,VCC1,+5V,,,"/>
+<approved hash="104,1,208.28,134.62,IC1,VCC2,+5V,,,"/>
 <approved hash="113,1,139.596,107.846,FRAME1,,,,,"/>
-<approved hash="113,1,101.6,37.8054,S1,,,,,"/>
-<approved hash="113,1,129.54,37.8054,S2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
