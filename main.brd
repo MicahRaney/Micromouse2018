@@ -159,9 +159,9 @@
 <wire x1="86" y1="60" x2="76" y2="70" width="0.1524" layer="20" curve="90"/>
 <wire x1="76" y1="70" x2="3" y2="70" width="0.1524" layer="20"/>
 <wire x1="3" y1="70" x2="0" y2="67" width="0.1524" layer="20" curve="90"/>
-<text x="40" y="33" size="1.778" layer="27">Micromouse 2018
+<text x="40" y="33" size="1.778" layer="25">Micromouse 2018
 Elrond Squad</text>
-<text x="40" y="31" size="0.6096" layer="27">Micah, JD, John, Phuc, Jacob, Carlton</text>
+<text x="40" y="31" size="0.6096" layer="25">Micah, JD, John, Phuc, Jacob, Carlton</text>
 </plain>
 <libraries>
 <library name="Rembrandt Electronics - JST XH Connectors v1-0">
