@@ -7259,17 +7259,12 @@ Distributor Buerklin, 11G810</description>
 <wire x1="-13" y1="-9" x2="-8" y2="-9" width="0.127" layer="21"/>
 <wire x1="0" y1="9" x2="0" y2="-9" width="0.127" layer="21"/>
 <wire x1="0" y1="-9" x2="-8" y2="-9" width="0.127" layer="21" curve="-180"/>
-<dimension x1="0" y1="9" x2="0" y2="-9" x3="7" y3="0" textsize="1.27" layer="21"/>
 <wire x1="0" y1="9" x2="-8" y2="9" width="0.127" layer="21" curve="180"/>
 <wire x1="-13" y1="6" x2="-30" y2="6" width="0.127" layer="21"/>
 <wire x1="-30" y1="6" x2="-30" y2="-6" width="0.127" layer="21"/>
 <wire x1="-30" y1="-6" x2="-13" y2="-6" width="0.127" layer="21"/>
 <hole x="-4" y="9" drill="1.15"/>
 <hole x="-4" y="-9" drill="1.15"/>
-<dimension x1="-30" y1="6" x2="0" y2="6" x3="-15" y3="21" textsize="1.27" layer="21"/>
-<dimension x1="-8" y1="9" x2="-13" y2="9" x3="-10.5" y3="14" textsize="1.27" layer="21"/>
-<dimension x1="-13" y1="9" x2="0" y2="9" x3="-6.5" y3="18" textsize="1.27" layer="21"/>
-<dimension x1="-30" y1="6" x2="-30" y2="-6" x3="-35" y3="0" textsize="1.27" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -7681,12 +7676,12 @@ Distributor Buerklin, 11G810</description>
 </net>
 <net name="L1" class="0">
 <segment>
-<wire x1="213.36" y1="180.34" x2="213.36" y2="182.88" width="0.1524" layer="91"/>
-<label x="213.36" y="182.88" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="213.36" y1="180.34" x2="213.36" y2="190.5" width="0.1524" layer="91"/>
+<label x="213.36" y="190.5" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="213.36" y1="182.88" x2="223.52" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="223.52" y1="182.88" x2="223.52" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="213.36" y1="190.5" x2="243.84" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="190.5" x2="243.84" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="116.84" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
@@ -7701,12 +7696,12 @@ Distributor Buerklin, 11G810</description>
 <pinref part="TEENSY" gate="G$1" pin="_B1"/>
 </segment>
 <segment>
-<wire x1="233.68" y1="180.34" x2="233.68" y2="182.88" width="0.1524" layer="91"/>
+<label x="223.52" y="182.88" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="223.52" y1="182.88" x2="223.52" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<label x="233.68" y="182.88" size="1.778" layer="95" rot="R90" xref="yes"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="243.84" y1="180.34" x2="243.84" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="182.88" x2="243.84" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="180.34" x2="223.52" y2="180.34" width="0.1524" layer="91"/>
+<junction x="223.52" y="180.34"/>
 </segment>
 </net>
 <net name="T1" class="0">
