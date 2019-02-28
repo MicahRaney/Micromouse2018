@@ -7266,11 +7266,24 @@ Distributor Buerklin, 11G810</description>
 <hole x="-4" y="9" drill="1.15"/>
 <hole x="-4" y="-9" drill="1.15"/>
 </package>
+<package name="FB_CASTER">
+<description>casterballbase</description>
+<circle x="6.75" y="0" radius="2.75" width="0.127" layer="21"/>
+<circle x="-6.75" y="0" radius="2.75" width="0.127" layer="21"/>
+<wire x1="-7" y1="2.75" x2="6.5" y2="2.75" width="0.127" layer="21"/>
+<wire x1="-6.75" y1="-2.75" x2="6.75" y2="-2.75" width="0.127" layer="21"/>
+<hole x="6.75" y="0" drill="2.3"/>
+<circle x="0" y="0" radius="6.75" width="0.127" layer="21"/>
+<hole x="-6.75" y="0" drill="2.3"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SM">
 <description>polulu motor</description>
 <text x="0" y="0" size="1.778" layer="94">Polulu Motor Mount</text>
+</symbol>
+<symbol name="SB_CASTER">
+<text x="0" y="0" size="1.778" layer="94">$NS1 Caster</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -7281,6 +7294,19 @@ Distributor Buerklin, 11G810</description>
 </gates>
 <devices>
 <device name="" package="FP">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CASTERBALL">
+<description>caster ball polulu</description>
+<gates>
+<gate name="G$1" symbol="SB_CASTER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FB_CASTER">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7374,8 +7400,9 @@ Distributor Buerklin, 11G810</description>
 <part name="SV2" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA06-1" device="" package3d_urn="urn:adsk.eagle:package:8340/1"/>
 <part name="S3" library="switch" library_urn="urn:adsk.eagle:library:380" deviceset="255SB" device="" package3d_urn="urn:adsk.eagle:package:27679/1"/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="U$1" library="personal" deviceset="POLULUMOTOR" device=""/>
+<part name="U$3" library="personal" deviceset="CASTERBALL" device=""/>
 <part name="U$2" library="personal" deviceset="POLULUMOTOR" device=""/>
+<part name="U$1" library="personal" deviceset="POLULUMOTOR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7572,8 +7599,9 @@ Distributor Buerklin, 11G810</description>
 <instance part="P+8" gate="1" x="81.28" y="165.1" smashed="yes" rot="R270">
 <attribute name="VALUE" x="76.2" y="167.64" size="1.778" layer="96"/>
 </instance>
-<instance part="U$1" gate="G$1" x="12.7" y="15.24" smashed="yes"/>
+<instance part="U$3" gate="G$1" x="12.7" y="5.08" smashed="yes"/>
 <instance part="U$2" gate="G$1" x="12.7" y="10.16" smashed="yes"/>
+<instance part="U$1" gate="G$1" x="12.7" y="15.24" smashed="yes"/>
 </instances>
 <busses>
 </busses>
