@@ -7263,8 +7263,8 @@ Distributor Buerklin, 11G810</description>
 <wire x1="-13" y1="6" x2="-30" y2="6" width="0.127" layer="21"/>
 <wire x1="-30" y1="6" x2="-30" y2="-6" width="0.127" layer="21"/>
 <wire x1="-30" y1="-6" x2="-13" y2="-6" width="0.127" layer="21"/>
-<hole x="-4" y="9" drill="1.15"/>
-<hole x="-4" y="-9" drill="1.15"/>
+<hole x="-4" y="9" drill="2"/>
+<hole x="-4" y="-9" drill="2"/>
 </package>
 <package name="FB_CASTER">
 <description>casterballbase</description>
