@@ -7394,8 +7394,6 @@ Distributor Buerklin, 11G810</description>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="TEENSY" library="teensy" deviceset="TEENSY" device=""/>
-<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="SV1" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA06-1" device="" package3d_urn="urn:adsk.eagle:package:8340/1"/>
 <part name="SV2" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA06-1" device="" package3d_urn="urn:adsk.eagle:package:8340/1"/>
 <part name="S3" library="switch" library_urn="urn:adsk.eagle:library:380" deviceset="255SB" device="" package3d_urn="urn:adsk.eagle:package:27679/1"/>
@@ -7403,6 +7401,8 @@ Distributor Buerklin, 11G810</description>
 <part name="U$3" library="personal" deviceset="CASTERBALL" device=""/>
 <part name="U$2" library="personal" deviceset="POLULUMOTOR" device=""/>
 <part name="U$1" library="personal" deviceset="POLULUMOTOR" device=""/>
+<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7578,12 +7578,6 @@ Distributor Buerklin, 11G810</description>
 <attribute name="NAME" x="71.12" y="139.7" size="1.778" layer="95"/>
 <attribute name="VALUE" x="71.12" y="104.14" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="P+2" gate="1" x="170.18" y="71.12" smashed="yes" rot="R90">
-<attribute name="VALUE" x="170.18" y="71.12" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="P+6" gate="1" x="213.36" y="71.12" smashed="yes" rot="R90">
-<attribute name="VALUE" x="213.36" y="71.12" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="SV1" gate="1" x="198.12" y="71.12" smashed="yes" rot="R180">
 <attribute name="VALUE" x="199.39" y="83.82" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="199.39" y="62.738" size="1.778" layer="95" rot="R180"/>
@@ -7602,6 +7596,12 @@ Distributor Buerklin, 11G810</description>
 <instance part="U$3" gate="G$1" x="12.7" y="5.08" smashed="yes"/>
 <instance part="U$2" gate="G$1" x="12.7" y="10.16" smashed="yes"/>
 <instance part="U$1" gate="G$1" x="12.7" y="15.24" smashed="yes"/>
+<instance part="P+1" gate="1" x="170.18" y="71.12" smashed="yes" rot="R90">
+<attribute name="VALUE" x="175.26" y="68.58" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="P+2" gate="1" x="213.36" y="71.12" smashed="yes" rot="R90">
+<attribute name="VALUE" x="218.44" y="68.58" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7946,6 +7946,18 @@ Distributor Buerklin, 11G810</description>
 <pinref part="P+8" gate="1" pin="+5V"/>
 <wire x1="73.66" y1="165.1" x2="78.74" y2="165.1" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SV1" gate="1" pin="4"/>
+<wire x1="190.5" y1="71.12" x2="172.72" y2="71.12" width="0.1524" layer="91"/>
+<label x="182.88" y="71.12" size="1.778" layer="95"/>
+<pinref part="P+1" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="1" pin="4"/>
+<label x="228.6" y="71.12" size="1.778" layer="95"/>
+<wire x1="236.22" y1="71.12" x2="215.9" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="P+2" gate="1" pin="+5V"/>
+</segment>
 </net>
 <net name="N$9" class="0">
 <segment>
@@ -7981,15 +7993,6 @@ Distributor Buerklin, 11G810</description>
 <wire x1="190.5" y1="109.22" x2="154.94" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="109.22" x2="154.94" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="68.58" x2="190.5" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VM1" class="0">
-<segment>
-<pinref part="SV1" gate="1" pin="4"/>
-<wire x1="190.5" y1="71.12" x2="180.34" y2="71.12" width="0.1524" layer="91"/>
-<label x="182.88" y="71.12" size="1.778" layer="95"/>
-<pinref part="P+2" gate="1" pin="+5V"/>
-<wire x1="180.34" y1="71.12" x2="172.72" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="M1A" class="0">
@@ -8071,15 +8074,6 @@ Distributor Buerklin, 11G810</description>
 <wire x1="226.06" y1="83.82" x2="205.74" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="83.82" x2="205.74" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="66.04" x2="236.22" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VM2" class="0">
-<segment>
-<pinref part="SV2" gate="1" pin="4"/>
-<wire x1="236.22" y1="71.12" x2="226.06" y2="71.12" width="0.1524" layer="91"/>
-<label x="228.6" y="71.12" size="1.778" layer="95"/>
-<pinref part="P+6" gate="1" pin="+5V"/>
-<wire x1="226.06" y1="71.12" x2="215.9" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

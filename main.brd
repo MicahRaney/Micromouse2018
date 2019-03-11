@@ -1408,7 +1408,8 @@ design rules under a new name.</description>
 <wire x1="68.25" y1="29" x2="68" y2="29" width="0.1524" layer="1"/>
 <wire x1="69" y1="29.75" x2="68.25" y2="29" width="0.1524" layer="1"/>
 <wire x1="69" y1="46" x2="69" y2="29.75" width="0.1524" layer="1"/>
-<wire x1="67.92" y1="46" x2="69" y2="46" width="0.1524" layer="1"/>
+<wire x1="67.92" y1="46" x2="68" y2="46" width="0.1524" layer="1"/>
+<wire x1="68" y1="46" x2="69" y2="46" width="0.1524" layer="1"/>
 <wire x1="68" y1="24" x2="67.92" y2="24" width="0.1524" layer="1"/>
 <wire x1="23" y1="16.5" x2="21.75" y2="17.75" width="0.1524" layer="1"/>
 <wire x1="66.25" y1="16.5" x2="23" y2="16.5" width="0.1524" layer="1"/>
@@ -1420,6 +1421,12 @@ design rules under a new name.</description>
 <wire x1="67.75" y1="52" x2="66.75" y2="53" width="0.1524" layer="1"/>
 <wire x1="37.75" y1="51.25" x2="37.62" y2="51.19" width="0.1524" layer="1"/>
 <wire x1="67.75" y1="52" x2="67.92" y2="52" width="0.1524" layer="1"/>
+<contactref element="SV1" pad="4"/>
+<contactref element="SV2" pad="4"/>
+<wire x1="62.23" y1="46.91" x2="67.09" y2="46.91" width="0.1524" layer="1"/>
+<wire x1="67.09" y1="46.91" x2="68" y2="46" width="0.1524" layer="1"/>
+<wire x1="62.23" y1="23.32" x2="67.32" y2="23.32" width="0.1524" layer="1"/>
+<wire x1="67.32" y1="23.32" x2="68" y2="24" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="LED4" pad="A"/>
@@ -1460,9 +1467,6 @@ design rules under a new name.</description>
 <wire x1="32.75" y1="51" x2="32.54" y2="51.19" width="0.1524" layer="16"/>
 <wire x1="62" y1="49.25" x2="62.23" y2="49.45" width="0.1524" layer="1"/>
 <via x="32.75" y="48.75" extent="1-16" drill="0.35"/>
-</signal>
-<signal name="VM1">
-<contactref element="SV1" pad="4"/>
 </signal>
 <signal name="M1A">
 <contactref element="SV1" pad="6"/>
@@ -1547,9 +1551,6 @@ design rules under a new name.</description>
 <wire x1="24.75" y1="58.75" x2="24.92" y2="58.81" width="0.1524" layer="1"/>
 <wire x1="62.25" y1="18.25" x2="62.23" y2="18.24" width="0.1524" layer="16"/>
 <via x="64.5" y="25.5" extent="1-16" drill="0.35"/>
-</signal>
-<signal name="VM2">
-<contactref element="SV2" pad="4"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
